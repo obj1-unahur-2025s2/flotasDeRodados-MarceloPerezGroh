@@ -1,0 +1,20 @@
+import rodados.*
+import dependencia.*
+
+
+describe "group of tests" {
+  const deportes = new Dependencia(cantidadDeEmpleados=45)
+  const cultura = new Dependencia(cantidadDeEmpleados=31)
+  const cachito = new Corsa(color = "rojo")
+
+
+  method initialize(){
+    deportes.agregarAFlota(cachito)
+    deportes.agregarAFlota(new Corsa(color="Azul"))
+    deportes.agregarAFlota(new Corsa(color="Azul"))
+  }
+  test "test con dos dependencias" {
+    
+  }
+
+}
